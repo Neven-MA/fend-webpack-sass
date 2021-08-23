@@ -1,0 +1,16 @@
+@mixin border($val1, $val2, $val3) {
+  border: $val1;
+  border-radius: $val2;
+  padding: $val3;
+}
+
+form {
+  @include border(1px solid #545454, 3px, 40px);
+
+  input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 2px;
+    margin: 10px 0;
+  }
+}
